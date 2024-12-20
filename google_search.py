@@ -35,7 +35,7 @@ class GoogleSearch:
                 final_results.extend(results)
             else:
                 print(f"Error: {response.status_code}")
-        return self.print_results(final_results)
+        return final_results
 
     def print_results(self, results):
         """
