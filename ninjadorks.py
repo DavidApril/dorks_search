@@ -42,5 +42,7 @@ if __name__ == '__main__':
     parser.add_argument('-p', '--pages', type=int, help='The number of pages to search')
     parser.add_argument('-l', '--lang', type=str, help='The language to search')
     parser.add_argument('-c', '--configure', action='store_true', help='Configure the API key and search engine ID')
+    parser.add_argument('--json', action='store_true', help='Export the results to a JSON file')
+    parser.add_argument('--html', action='store_true', help='Export the results to an HTML file')
     args = parser.parse_args()
     main(args)
